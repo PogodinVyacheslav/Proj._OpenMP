@@ -27,6 +27,7 @@ int main() {
     omp_set_num_threads(g_nNumberOfThreads);
     setlocale(LC_ALL, "Russian");
 
+    clock_t start = clock();
     string inputFileName = "prestuplenie-i-nakazanie.txt";
     string outputFileName = "output.txt";
 
@@ -76,6 +77,8 @@ int main() {
         cout << i + 1 << ". " << word_vector[i].first << ": " << word_vector[i].second << endl;
     }
 
-
+  clock_t end = clock();
+  double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+  printf("The time: %f seconds\n", seconds);
     return 0;
 }
