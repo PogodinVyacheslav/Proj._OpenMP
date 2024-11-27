@@ -9,7 +9,6 @@
 //#include <time.h>
 #include <omp.h>
 //#include <ctime>  
-#include "StdCUtil/split.h"
 #include "withoutsigns.h"
 //using namespace std;
 
