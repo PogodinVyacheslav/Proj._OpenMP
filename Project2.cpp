@@ -26,7 +26,7 @@ string to_lower(const string& str) {
 int main() {
 
     
-    unsigned int start_time = clock(); 
+    //unsigned int start_time = clock(); 
     omp_set_num_threads(g_nNumberOfThreads);
     setlocale(LC_ALL, "Russian");
 
@@ -79,7 +79,7 @@ int main() {
     for (size_t i = 0; i < 30; ++i) {
         cout << i + 1 << ". " << word_vector[i].first << ": " << word_vector[i].second << endl;
     }                             // Время начала вычислений
-    unsigned int end_time = clock();                                // Время окончания вычислений
-    std::cout << "time = " << end_time - start_time << " ms.\n";
+    //unsigned int end_time = clock();                                // Время окончания вычислений
+    //std::cout << "time = " << end_time - start_time << " ms.\n";
     return 0;
 }
