@@ -6,9 +6,9 @@
 #include <vector>
 #include <algorithm>
 #include <cctype>
-#include <time.h>
+//#include <time.h>
 #include <omp.h>
-#include <ctime>  
+//#include <ctime>  
 #include "withoutsigns.h"
 //using namespace std;
 
